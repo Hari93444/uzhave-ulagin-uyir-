@@ -18,8 +18,8 @@ const Footer = () => {
             </div>
             <p className="footer-tagline">"Rooted in the soil. Connected to life."</p>
             
-            <div className="footer-organic-image">
-              <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Fresh Organic Vegetables" />
+            <div className="footer-about-text">
+              <p>Bringing nature's finest to your doorstep. We are committed to organic farming, sustainability, and providing healthy, farm-fresh produce to our community.</p>
             </div>
             
             <div className="social-icons">

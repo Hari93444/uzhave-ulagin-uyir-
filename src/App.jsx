@@ -25,8 +25,8 @@ function App() {
         <ProcessTimeline />
         <Testimonials />
         <Statistics />
-        <CallToAction />
         <Contact />
+        <CallToAction />
       </main>
       <Footer />
     </div>

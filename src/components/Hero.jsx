@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Leaf } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import './Hero.css';
 
 const bgImages = [
@@ -10,6 +11,7 @@ const bgImages = [
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -40,18 +42,26 @@ const Hero = () => {
       <div className="container hero-container">
         <div className="hero-content fade-up-enter">
           
-          <h1 className="hero-title tamil-text">உழவே உலகின் உயிர்</h1>
-          <h2 className="hero-subtitle">Farming is the Life of the World</h2>
+          <h1 className="hero-title">{t('hero.title')}</h1>
+          <h2 className="hero-subtitle">{t('hero.subtitle')}</h2>
           
           <p className="hero-description">
-            Pure from the soil. Honest from the farm. Nourishing for every home.
-            Discover naturally grown organic products cultivated with care, tradition and respect for the earth.
+            {t('hero.desc')}
           </p>
           
           <div className="hero-actions">
-            <button className="btn btn-primary">Explore Our Products</button>
-            <button className="btn btn-outline" style={{ color: 'white', borderColor: 'white' }}>
-              Discover Our Story
+            <button 
+              className="btn btn-primary"
+              onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              {t('hero.exploreBtn')}
+            </button>
+            <button 
+              className="btn btn-outline" 
+              style={{ color: 'white', borderColor: 'white' }}
+              onClick={() => document.getElementById('story')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              {t('hero.discoverBtn')}
             </button>
           </div>
         </div>

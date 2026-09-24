@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import './Story.css';
 import { Leaf } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Story = () => {
   const sectionRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,19 +38,24 @@ const Story = () => {
           
           <div className="story-content-side reveal" style={{ transitionDelay: '0.2s' }}>
             <div className="small-label">
-              <Leaf size={14} /> OUR STORY
+              <Leaf size={14} /> {t('story.label')}
             </div>
             
-            <h2 className="story-title">Rooted in Tradition. Growing for Tomorrow.</h2>
+            <h2 className="story-title">{t('story.title')}</h2>
             
             <p className="story-text">
-              Our journey begins with the farmers who understand the soil, respect the seasons and preserve the wisdom passed down through generations. 
+              {t('story.text1')}
             </p>
             <p className="story-text">
-              Uzhave Ulagin Uyir brings this connection from the farm to modern homes, ensuring that every product you consume is as pure as nature intended.
+              {t('story.text2')}
             </p>
             
-            <button className="btn btn-outline story-btn">Read Our Story</button>
+            <button 
+              className="btn btn-outline story-btn"
+              onClick={() => document.getElementById('story')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              {t('story.btn')}
+            </button>
             
             <div className="decorative-illustration">
               <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">

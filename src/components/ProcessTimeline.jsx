@@ -1,16 +1,18 @@
 import React, { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import './ProcessTimeline.css';
-
-const steps = [
-  { id: '01', title: 'Nurture', text: 'Healthy soil and natural farming practices.' },
-  { id: '02', title: 'Grow', text: 'Crops are grown with patience and care.' },
-  { id: '03', title: 'Harvest', text: 'Products are harvested at the right time.' },
-  { id: '04', title: 'Prepare', text: 'Carefully cleaned and prepared.' },
-  { id: '05', title: 'Deliver', text: 'Fresh goodness reaches your home.' }
-];
 
 const ProcessTimeline = () => {
   const sectionRef = useRef(null);
+  const { t } = useTranslation();
+
+  const steps = [
+    { id: '01', title: t('process.s1_title'), text: t('process.s1_desc') },
+    { id: '02', title: t('process.s2_title'), text: t('process.s2_desc') },
+    { id: '03', title: t('process.s3_title'), text: t('process.s3_desc') },
+    { id: '04', title: t('process.s4_title'), text: t('process.s4_desc') },
+    { id: '05', title: t('process.s5_title'), text: t('process.s5_desc') }
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,7 +36,7 @@ const ProcessTimeline = () => {
     <section className="process section-padding" ref={sectionRef}>
       <div className="container">
         <div className="process-header reveal">
-          <h2 className="process-title">From Farm to Your Table</h2>
+          <h2 className="process-title">{t('process.title')}</h2>
         </div>
 
         <div className="timeline">

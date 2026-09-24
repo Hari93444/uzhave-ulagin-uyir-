@@ -33,18 +33,20 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-tamil), var(--font-body);
   color: var(--color-text-dark);
   background-color: var(--color-secondary-cream);
   line-height: 1.6;
   overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+  font-family: var(--font-tamil), var(--font-heading);
   font-weight: 600;
   color: var(--color-primary-dark);
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .tamil-text {
@@ -125,6 +127,7 @@ button {
   font-weight: 500;
   border-radius: 24px 4px 24px 4px;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .btn-primary {
@@ -197,5 +200,21 @@ button {
 @media (max-width: 768px) {
   .section-padding {
     padding: 4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.3rem; }
+}
+
+@media (max-width: 768px) {
+  .tamil-text {
+    font-size: 0.8em;
   }
 }

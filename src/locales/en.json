@@ -1,0 +1,141 @@
+{
+  "navbar": {
+    "logo_title": "Uzhave Ulagin Uyir",
+    "logo_subtitle": "Farming is the Life of the World",
+    "home": "Home",
+    "story": "Our Story",
+    "products": "Products",
+    "whyOrganic": "Why Organic",
+    "farming": "Farming",
+    "contact": "Contact",
+    "shopNow": "Shop Now"
+  },
+  "hero": {
+    "title": "Uzhave Ulagin Uyir",
+    "subtitle": "Farming is the Life of the World",
+    "desc": "Pure from the soil. Honest from the farm. Nourishing for every home. Discover naturally grown organic products cultivated with care, tradition and respect for the earth.",
+    "exploreBtn": "Explore Our Products",
+    "discoverBtn": "Discover Our Story"
+  },
+  "story": {
+    "label": "OUR STORY",
+    "title": "Rooted in Tradition. Growing for Tomorrow.",
+    "text1": "Our journey begins with the farmers who understand the soil, respect the seasons and preserve the wisdom passed down through generations.",
+    "text2": "Uzhave Ulagin Uyir brings this connection from the farm to modern homes, ensuring that every product you consume is as pure as nature intended.",
+    "btn": "Read Our Story"
+  },
+  "products": {
+    "title": "Nature's Finest, Carefully Grown",
+    "subtitle": "Wholesome organic products for a healthier way of living.",
+    "p1_name": "Organic Rice",
+    "p1_desc": "Wholesome rice grown with traditional farming practices.",
+    "p2_name": "Organic Millets",
+    "p2_desc": "Nutritious traditional grains packed with natural goodness.",
+    "p3_name": "Cold Pressed Oil",
+    "p3_desc": "Pure, naturally extracted oil made without unnecessary processing.",
+    "p4_name": "Organic Pulses",
+    "p4_desc": "Protein-rich pulses carefully grown and naturally processed.",
+    "p5_name": "Natural Honey",
+    "p5_desc": "Pure honey collected from natural surroundings.",
+    "p6_name": "Traditional Spices",
+    "p6_desc": "Aromatic spices grown and prepared with care.",
+    "badge": "Organic",
+    "addBtn": "Add to Cart",
+    "viewBtn": "View All Products"
+  },
+  "why": {
+    "title": "Good for You. Good for the Earth.",
+    "c1_title": "Healthy Living",
+    "c1_desc": "Food grown naturally with care and minimal unnecessary intervention.",
+    "c2_title": "Better Soil",
+    "c2_desc": "Encouraging farming practices that respect and protect the soil.",
+    "c3_title": "Supporting Farmers",
+    "c3_desc": "Creating a stronger connection between farmers and consumers.",
+    "c4_title": "Sustainable Future",
+    "c4_desc": "Choosing farming practices that care for tomorrow's generations."
+  },
+  "process": {
+    "title": "From Farm to Your Table",
+    "s1_title": "Nurture",
+    "s1_desc": "Healthy soil and natural farming practices.",
+    "s2_title": "Grow",
+    "s2_desc": "Crops are grown with patience and care.",
+    "s3_title": "Harvest",
+    "s3_desc": "Products are harvested at the right time.",
+    "s4_title": "Prepare",
+    "s4_desc": "Carefully cleaned and prepared.",
+    "s5_title": "Deliver",
+    "s5_desc": "Fresh goodness reaches your home."
+  },
+  "intro": {
+    "title": "From Our Soil to Your Home",
+    "desc": "At Uzhave Ulagin Uyir, we believe that healthy food begins with healthy soil. We work with the spirit of traditional farming and the care of modern organic practices to bring nature's goodness directly to your home.",
+    "f1_title": "Naturally Grown",
+    "f1_desc": "Cultivated without harmful chemicals, respecting nature's rhythm.",
+    "f2_title": "Farmer First",
+    "f2_desc": "Empowering traditional farmers with fair trade and direct connection.",
+    "f3_title": "Earth Friendly",
+    "f3_desc": "Sustainable practices that enrich the soil for future generations."
+  },
+  "stats": {
+    "s1": "Years of Farming Experience",
+    "s2": "Happy Families",
+    "s3": "Organic Products",
+    "s4": "Commitment to Nature"
+  },
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "t1_quote": "Knowing where our food comes from makes every meal feel more meaningful.",
+    "t2_quote": "The freshness and quality are noticeably different. It feels like bringing the farm home.",
+    "t3_quote": "Simple, natural and trustworthy products for our family."
+  },
+  "cta": {
+    "title": "Stay Connected",
+    "desc": "Get updates on new products, health tips and special offers.",
+    "placeholder": "Enter your email address",
+    "btn": "Subscribe"
+  },
+  "contact": {
+    "title": "Let's Grow Together",
+    "desc": "Have questions about our products or farming practices? We'd love to hear from you.",
+    "visit": "Visit Us",
+    "call": "Call Us",
+    "email": "Email Us",
+    "success_title": "Message Sent Successfully!",
+    "success_desc": "Thank you for reaching out. We will get back to you shortly.",
+    "form_name": "Full Name",
+    "form_name_ph": "Your name",
+    "form_email": "Email Address",
+    "form_email_ph": "Your email address",
+    "form_phone": "Phone Number",
+    "form_phone_ph": "Your phone number",
+    "form_msg": "Message",
+    "form_msg_ph": "How can we help you?",
+    "form_submit": "Send Message",
+    "form_submitting": "Sending..."
+  },
+  "footer": {
+    "tagline": "Natural Products | Healthy Life | Sustainable Future",
+    "about": "Bringing you the best of nature's goodness, supporting farmers and promoting a healthier, sustainable future.",
+    "quickLinks": "Quick Links",
+    "l_all": "All Products",
+    "l_about": "About Us",
+    "l_farmers": "Our Farmers",
+    "l_blog": "Blog",
+    "categories": "Categories",
+    "c1": "Millets & Grains",
+    "c2": "Natural Foods",
+    "c3": "Herbal Products",
+    "c4": "Traditional Oils",
+    "c5": "Spices & Masala",
+    "c6": "Personal Care",
+    "c7": "Home & Living",
+    "c8": "Gift Packs",
+    "timing": "Mon - Sat : 9.00 AM - 6.00 PM",
+    "holiday": "(Sunday Holiday)",
+    "rights": "© 2024 Uzhave Ulagin Uyir. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "refund": "Refund Policy"
+  }
+}

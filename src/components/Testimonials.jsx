@@ -1,30 +1,32 @@
 import React, { useEffect, useRef } from 'react';
 import { Quote } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import './Testimonials.css';
-
-const testimonialsData = [
-  {
-    id: 1,
-    quote: "Knowing where our food comes from makes every meal feel more meaningful.",
-    author: "Priya",
-    location: "Chennai"
-  },
-  {
-    id: 2,
-    quote: "The freshness and quality are noticeably different. It feels like bringing the farm home.",
-    author: "Arun",
-    location: "Coimbatore"
-  },
-  {
-    id: 3,
-    quote: "Simple, natural and trustworthy products for our family.",
-    author: "Meena",
-    location: "Madurai"
-  }
-];
 
 const Testimonials = () => {
   const sectionRef = useRef(null);
+  const { t } = useTranslation();
+
+  const testimonialsData = [
+    {
+      id: 1,
+      quote: t('testimonials.t1_quote'),
+      author: "Priya",
+      location: "Chennai"
+    },
+    {
+      id: 2,
+      quote: t('testimonials.t2_quote'),
+      author: t('testimonials.author2', { defaultValue: 'Arun' }),
+      location: t('testimonials.location2', { defaultValue: 'Coimbatore' })
+    },
+    {
+      id: 3,
+      quote: t('testimonials.t3_quote'),
+      author: t('testimonials.author3', { defaultValue: 'Meena' }),
+      location: t('testimonials.location3', { defaultValue: 'Madurai' })
+    }
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -48,7 +50,7 @@ const Testimonials = () => {
     <section className="testimonials section-padding" ref={sectionRef}>
       <div className="container">
         <div className="testimonials-header reveal">
-          <h2 className="testimonials-title">What Our Customers Say</h2>
+          <h2 className="testimonials-title">{t('testimonials.title')}</h2>
         </div>
 
         <div className="testimonials-grid">

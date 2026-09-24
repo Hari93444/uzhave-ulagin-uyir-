@@ -1,19 +1,26 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './CallToAction.css';
 
 const CallToAction = () => {
+  const { t } = useTranslation();
   return (
     <section className="stay-connected-section section-padding">
       <div className="container">
         <div className="stay-connected-box reveal">
           <div className="stay-connected-content">
-            <h2>Stay Connected</h2>
-            <p>Get updates on new products, health tips and special offers.</p>
+            <h2>{t('cta.title')}</h2>
+            <p>{t('cta.desc')}</p>
           </div>
           
           <div className="stay-connected-form">
-            <input type="email" placeholder="Enter your email address" />
-            <button className="subscribe-btn">Subscribe</button>
+            <input type="email" placeholder={t('cta.placeholder')} />
+            <button 
+              className="subscribe-btn"
+              onClick={() => alert('Subscribed successfully!')}
+            >
+              {t('cta.btn')}
+            </button>
           </div>
           
           {/* Leaf decorations */}

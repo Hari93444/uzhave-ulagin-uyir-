@@ -1,16 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Statistics.css';
-
-const statsData = [
-  { value: 10, suffix: '+', label: 'Years of Farming Experience' },
-  { value: 500, suffix: '+', label: 'Happy Families' },
-  { value: 25, suffix: '+', label: 'Organic Products' },
-  { value: 100, suffix: '%', label: 'Commitment to Nature' }
-];
 
 const Statistics = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const sectionRef = useRef(null);
+  const { t } = useTranslation();
+
+  const statsData = [
+    { value: 10, suffix: '+', label: t('stats.s1') },
+    { value: 500, suffix: '+', label: t('stats.s2') },
+    { value: 25, suffix: '+', label: t('stats.s3') },
+    { value: 100, suffix: '%', label: t('stats.s4') }
+  ];
+
   const [counts, setCounts] = useState(statsData.map(() => 0));
 
   useEffect(() => {

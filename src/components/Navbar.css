@@ -59,15 +59,16 @@
 
 .navbar-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .nav-link {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--color-text-dark);
   position: relative;
   padding-bottom: 4px;
+  white-space: nowrap;
 }
 
 .navbar:not(.scrolled) .nav-link {
@@ -154,13 +155,13 @@
     background-color: var(--color-secondary-cream);
     padding: 0;
     max-height: 0;
-    overflow: hidden;
+    overflow-y: auto;
     transition: max-height 0.4s ease;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
   }
   
   .mobile-menu.open {
-    max-height: 500px;
+    max-height: 80vh;
   }
   
   .mobile-nav-links {
@@ -171,7 +172,7 @@
   }
   
   .mobile-nav-links a {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--color-text-dark);
   }
@@ -179,5 +180,26 @@
   .shop-now-btn-mobile {
     margin-top: 1rem;
     width: 100%;
+  }
+}
+/* Language Switcher CSS */
+.lang-switcher-container { position: relative; }
+.lang-btn { display: flex; align-items: center; gap: 0.5rem; font-weight: 500; font-size: 0.9rem; }
+.current-lang { text-transform: uppercase; }
+.lang-dropdown { position: absolute; top: 100%; right: 0; background-color: var(--color-white); border-radius: var(--border-radius-md); box-shadow: var(--shadow-md); padding: 0.5rem; display: flex; flex-direction: column; gap: 0.25rem; min-width: 150px; z-index: 100; border: 1px solid var(--color-gray-200); margin-top: 0.5rem; }
+.lang-option { padding: 0.5rem 1rem; border: none; background: transparent; text-align: left; border-radius: var(--border-radius-sm); cursor: pointer; transition: var(--transition-fast); font-size: 0.9rem; color: var(--color-gray-800); }
+.lang-option:hover, .lang-option.active { background-color: var(--color-primary-light); color: var(--color-primary-dark); font-weight: 600; }
+.mobile-lang-options { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--color-gray-200); }
+.mobile-lang-title { font-size: 0.9rem; color: var(--color-gray-600); margin-bottom: 0.5rem; }
+.mobile-lang-buttons { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.mobile-lang-btn { padding: 0.5rem 1rem; border: 1px solid var(--color-gray-300); background: transparent; border-radius: var(--border-radius-sm); cursor: pointer; transition: var(--transition-fast); font-size: 0.9rem; }
+.mobile-lang-btn.active { background-color: var(--color-primary); color: var(--color-white); border-color: var(--color-primary); }
+
+@media (max-width: 768px) {
+  .logo-title {
+    font-size: 0.85rem;
+  }
+  .logo-subtitle {
+    font-size: 0.5rem;
   }
 }

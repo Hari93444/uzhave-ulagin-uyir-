@@ -69,11 +69,11 @@ const Footer = () => {
             <ul className="footer-contact-list">
               <li>
                 <MapPin size={16} className="contact-icon" />
-                <span>Coimbatore, Tamil Nadu, India</span>
+                <span>Gobichettipalayam, Tamil Nadu, India</span>
               </li>
               <li>
                 <PhoneIcon size={16} className="contact-icon" />
-                <span>+91 98765 43210</span>
+                <span>GANESAN K<br/>+91 94433 22446</span>
               </li>
               <li>
                 <Mail size={16} className="contact-icon" />

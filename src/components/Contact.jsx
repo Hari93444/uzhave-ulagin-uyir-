@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4>{t('contact.visit')}</h4>
-                  <p>Tamil Nadu, India</p>
+                  <p>Gobichettipalayam, Tamil Nadu, India</p>
                 </div>
               </div>
               
@@ -69,7 +69,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4>{t('contact.call')}</h4>
-                  <p>+91 XXXXX XXXXX</p>
+                  <p><strong>GANESAN K</strong></p>
+                  <p>+91 94433 22446</p>
                 </div>
               </div>
               
@@ -128,7 +129,7 @@ const Contact = () => {
         
         <div className="contact-map reveal" style={{ transitionDelay: '0.4s', width: '100%', marginTop: '4rem', height: '400px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2996611419736!2d76.9558321!3d11.0168445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1709210000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31317.842790176845!2d77.41908075!3d11.45524675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba93d7c3d223293%3A0x7d25e076735e5d1e!2sGobichettipalayam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1709210000000!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}

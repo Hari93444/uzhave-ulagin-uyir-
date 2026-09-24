@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Story.css';
 import { Leaf } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 const Story = () => {
   const sectionRef = useRef(null);
   const { t } = useTranslation();
+  const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -19,11 +20,17 @@ const Story = () => {
       { threshold: 0.2 }
     );
 
-    const elements = sectionRef.current.querySelectorAll('.reveal');
-    elements.forEach((el) => observer.observe(el));
+    const elements = sectionRef.current?.querySelectorAll('.reveal');
+    if (elements) {
+      elements.forEach((el) => observer.observe(el));
+    }
 
-    return () => elements.forEach((el) => observer.unobserve(el));
-  }, []);
+    return () => {
+      if (elements) {
+        elements.forEach((el) => observer.unobserve(el));
+      }
+    };
+  }, [isExpanded]); // re-run if isExpanded changes so new text gets animated
 
   return (
     <section id="story" className="story section-padding" ref={sectionRef}>
@@ -49,13 +56,26 @@ const Story = () => {
             <p className="story-text">
               {t('story.text2')}
             </p>
+
+            {isExpanded && (
+              <div className="story-extra-text reveal active" style={{ marginTop: '1rem', animation: 'fadeUp 0.6s ease-out forwards' }}>
+                <p className="story-text">
+                  {t('story.text3')}
+                </p>
+                <p className="story-text">
+                  {t('story.text4')}
+                </p>
+              </div>
+            )}
             
-            <button 
-              className="btn btn-outline story-btn"
-              onClick={() => document.getElementById('story')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              {t('story.btn')}
-            </button>
+            {!isExpanded && (
+              <button 
+                className="btn btn-outline story-btn"
+                onClick={() => setIsExpanded(true)}
+              >
+                {t('story.btn')}
+              </button>
+            )}
             
             <div className="decorative-illustration">
               <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">

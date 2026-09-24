@@ -17,7 +17,7 @@ const CallToAction = () => {
             <input type="email" placeholder={t('cta.placeholder')} />
             <button 
               className="subscribe-btn"
-              onClick={() => alert('Subscribed successfully!')}
+              onClick={() => window.dispatchEvent(new CustomEvent('show-toast', { detail: { message: 'Subscribed successfully!' } }))}
             >
               {t('cta.btn')}
             </button>

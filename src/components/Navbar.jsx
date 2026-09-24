@@ -91,7 +91,11 @@ const Navbar = () => {
           <button className="action-btn desktop-only" aria-label={t('navbar.search') || "Search"}>
             <Search size={20} />
           </button>
-          <button className="action-btn" aria-label={t('navbar.cart') || "Cart"}>
+          <button 
+            className="action-btn" 
+            aria-label={t('navbar.cart') || "Cart"}
+            onClick={() => window.dispatchEvent(new CustomEvent('show-toast', { detail: { message: 'Your cart is empty' } }))}
+          >
             <ShoppingBag size={20} />
           </button>
           <button 
